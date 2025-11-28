@@ -14,10 +14,3 @@ typedef struct {
 
 }thing;
 
-// LOADING CSV 
-
-thing* loading(const char *file, size_t *n){
-    FILE *f=fopen(file,"r");
-    if(!f) return NULL;
-    thing t,*array = NULL;
-    *n=0;
