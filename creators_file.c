@@ -21,3 +21,13 @@ thing* loading(const char *file, size_t *n){
     if(!f) return NULL;
     thing t,*array = NULL;
     *n=0;
+
+
+    while (fscanf(f,"%49[^,],%lf,%lf,%d\n",t.name,&t.watt,&t.hrs,&t.on)==4){
+        array =realloc(array,(*n+1)*sizeof(thing));
+        array[*n]=t;
+        (*n)++;
+    }
+    fclose(f);
+    return array;
+}
