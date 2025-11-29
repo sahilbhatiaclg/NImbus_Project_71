@@ -110,3 +110,14 @@ void displayreport(thing *array,size_t n, double rate){
     printf("Weekly Cost: %.2f\n",total*rate*7);
     printf("Monthly Cost: %.2f\n",total*rate*30);
 }
+
+
+int main() {
+    size_t n =0;
+    double rate = 0.12;
+    thing *array = loading("data/appliances.csv",&n);
+
+    int target;
+    while(1){
+        printf("\n1) REPORT\n2) TOGGLE\n3) ADD\n4) REMOVE\n5) TARIFF\n6) SAVE&EXIT\n> ");
+    scanf("%d",&target);
