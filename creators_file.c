@@ -104,3 +104,9 @@ void displayreport(thing *array,size_t n, double rate){
         t);
     
         }
+
+    printf("\nTotal Daily kWh: %.3f kWh\n",total);
+    printf("Daily Cost: %.2f\n",total*rate);
+    printf("Weekly Cost: %.2f\n",total*rate*7);
+    printf("Monthly Cost: %.2f\n",total*rate*30);
+}
