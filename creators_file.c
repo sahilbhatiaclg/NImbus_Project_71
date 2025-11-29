@@ -64,3 +64,15 @@ thing* adding(thing *array, size_t *n){
     (*n)++;
     return array;
 }
+
+
+//REMOVE DEVICE 
+
+thing* remov(thing *array,size_t *n,size_t i){
+    if(i>= *n)
+        return array;
+    for(size_t j = i;j+1< *n;j++)
+        array[j]= array[j+1];
+    (*n)--;
+    return realloc(array,*n * sizeof(thing));
+}
