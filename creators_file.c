@@ -112,6 +112,9 @@ void displayreport(thing *array,size_t n, double rate){
 }
 
 
+
+
+
 int main() {
     size_t n =0;
     double rate = 0.12;
@@ -121,3 +124,8 @@ int main() {
     while(1){
         printf("\n1) REPORT\n2) TOGGLE\n3) ADD\n4) REMOVE\n5) TARIFF\n6) SAVE&EXIT\n> ");
     scanf("%d",&target);
+
+        
+    if(target==1){
+        displayreport(array ,n,  rate);
+    }
