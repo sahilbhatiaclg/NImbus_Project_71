@@ -148,3 +148,8 @@ else if(target==4){
         printf("New Tariff: ");
         scanf("%lf",&rate);
     }
+else if(target=6){
+        store("data/appliances.csv",array,n);
+        printf("Saved.\n");
+        break;
+    }
