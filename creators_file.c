@@ -153,3 +153,10 @@ else if(target=6){
         printf("Saved.\n");
         break;
     }
+    else{
+        printf("Invalid!\n");
+    }
+}
+    free(array);
+    return 0;
+}
